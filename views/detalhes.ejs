@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style_index.css" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><img src="/img/pokebola.png" alt="pokebola" /></li>
+        <li>
+          <a href="/"><h1>Pokédex</h1></a>
+        </li>
+        <li><a href="/cadastrar">Cadastrar</a></li>
+        <li><a href="#cards">Pokémons</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <img src="/img/banner.png" alt="banner" />
+    </header>
+
+    <main>
+      <section id="cards">
+
+        <h2>Pokémons</h2>
+
+        <% pokedex.forEach((pokemon) => { %>
+        <div class="card">
+          <h3><%= pokemon.nome%></h3>
+          <img src="<%= pokemon.imagem %>" alt="imagem do pokemon" />
+          <p class="id">Id: <%= pokemon.id%></p>
+          <p class="tipo">Tipo: <%= pokemon.tipo%></p>
+          <p class="descricao">Descrição: <%= pokemon.descricao%></p>
+          <p class="altura">Altura: <%= pokemon.altura%></p>
+          <p class="peso">Peso: <%= pokemon.peso%></p>
+          <p class="categoria">Categoria: <%= pokemon.categoria%></p>
+          <p class="habilidade">Habilidade: <%= pokemon.habilidade%></p>
+
+        </div>
+        <% }) %>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Ana Beatriz &copy; - Todos os direitos reservados</p>
+      <p>
+        Dados retirados de
+        <a target="_blank" href="https://www.pokemon.com/br/pokedex/"
+          >Pokédex</a
+        >
+      </p>
+    </footer>
+
+    <script src="/js/script_index.js"></script>
+
+  </body>
+</html>

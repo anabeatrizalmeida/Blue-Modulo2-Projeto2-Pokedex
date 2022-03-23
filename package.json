@@ -1,0 +1,25 @@
+{
+  "name": "blue-modulo2-projeto2-pokedex",
+  "version": "1.0.0",
+  "description": "Projeto mvc de uma pokedex",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anabeatrizalmeida/Blue-Modulo2-Projeto2-Pokedex.git"
+  },
+  "author": "Ana Beatriz de Almeida Rocha dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anabeatrizalmeida/Blue-Modulo2-Projeto2-Pokedex/issues"
+  },
+  "homepage": "https://github.com/anabeatrizalmeida/Blue-Modulo2-Projeto2-Pokedex#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
