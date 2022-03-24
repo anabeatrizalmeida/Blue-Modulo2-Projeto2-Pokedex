@@ -52,8 +52,8 @@ nav ul li a:hover {
 
 section#message {
   padding: 1.5rem;
-  background-color: rgb(62, 106, 195);
-  color: rgb(238, 196, 98);
+  background-color: rgb(238, 15, 201);
+  color: rgb(8, 56, 4);
   position: fixed;
   top: 3rem;
   left: 0;
@@ -72,10 +72,11 @@ span#close {
   font-size: 2rem;
   cursor: pointer;
   transition: 0.3s;
+  color: rgb(8, 56, 4);
 }
 
 span#close:hover {
-  color: rgb(62, 106, 195);
+  color:  rgb(31, 2, 26);
   transform: scale(1.5);
 }
 
@@ -126,13 +127,13 @@ section#cards div.card h3 {
 
 section#cards div.card p.id {
   margin-bottom: 1rem;
-  color: rgb(214, 214, 214);
+  color:  #b69c0a;
   font-weight: 700;
 }
 
 section#cards div.card p.tipo {
   margin-bottom: 1rem;
-  color: rgb(214, 214, 214);
+  color:  #b69c0a;
   font-weight: 700;
 }
 

@@ -1,9 +1,6 @@
-/*require("dotenv").config();*/
-
 const express = require("express");
 const path = require("path");
 const app = express();
-/*const port = process.env.PORT || 3000;*/
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
@@ -50,6 +47,7 @@ const pokedex = [
 
 let pokemon = undefined;
 let message = "";
+var pok = 1;
 
 // Rotas de acesso.
 app.get("/", (req, res) => {
@@ -68,10 +66,11 @@ app.get("/editar", (req, res) => {
 });
 
 app.get("/detalhes", (req, res) => {
-  res.render("detalhes", { pokedex, pokemon });
+  res.render("detalhes", { pokedex, pok });
 });
 
 app.get("/detalhes/:id", (req, res) => {
+    pok = +req.params.id;
     res.redirect("/detalhes");
   });
 
@@ -95,6 +94,7 @@ app.post("/update/:id", (req, res) => {
   newPokemon.id = id + 1;
   pokedex[id] = newPokemon;
   pokemon = undefined;
+  message = "Pokémon atualizado com sucesso!";
   res.redirect("/#cards");
 });
 

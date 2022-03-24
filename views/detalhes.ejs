@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style_index.css" />
+    <link rel="stylesheet" href="/css/style_detalhes.css" />
     <title>Pokédex</title>
   </head>
   <body>
@@ -15,7 +15,7 @@
           <a href="/"><h1>Pokédex</h1></a>
         </li>
         <li><a href="/cadastrar">Cadastrar</a></li>
-        <li><a href="#cards">Pokémons</a></li>
+        <li><a href="/#cards">Pokémons</a></li>
       </ul>
     </nav>
 
@@ -26,28 +26,29 @@
     <main>
       <section id="cards">
 
-        <h2>Pokémons</h2>
+        <h2>Pokémon</h2>
 
-        <% pokedex.forEach((pokemon) => { %>
+        <% pokedex.forEach((pokemon) => {  if (pokemon.id == pok) {%>
+
         <div class="card">
           <h3><%= pokemon.nome%></h3>
           <img src="<%= pokemon.imagem %>" alt="imagem do pokemon" />
-          <p class="id">Id: <%= pokemon.id%></p>
-          <p class="tipo">Tipo: <%= pokemon.tipo%></p>
-          <p class="descricao">Descrição: <%= pokemon.descricao%></p>
-          <p class="altura">Altura: <%= pokemon.altura%></p>
-          <p class="peso">Peso: <%= pokemon.peso%></p>
-          <p class="categoria">Categoria: <%= pokemon.categoria%></p>
-          <p class="habilidade">Habilidade: <%= pokemon.habilidade%></p>
+          <p class="id">Id: <span id="id"><%= pokemon.id%></span></p>
+          <p class="tipo">Tipo: <span id="tipo"><%= pokemon.tipo%></span></p>
+          <p class="descricao">Descrição: <span id="descricao"><%= pokemon.descricao%></span></p>
+          <p class="altura">Altura: <span id="altura"><%= pokemon.altura%></span></p>
+          <p class="peso">Peso: <span id="peso"><%= pokemon.peso%></span></p>
+          <p class="categoria">Categoria: <span id="categoria"><%= pokemon.categoria%></span></p>
+          <p class="habilidade">Habilidade: <span id="habilidade"><%= pokemon.habilidade%></span></p>
 
         </div>
-        <% }) %>
+        <% } }) %>
       </section>
 
     </main>
 
     <footer>
-      <p>Ana Beatriz &copy; - Todos os direitos reservados</p>
+      <p>Ana Beatriz &copy; - Todos os direitos reservados para</p>
       <p>
         Dados retirados de
         <a target="_blank" href="https://www.pokemon.com/br/pokedex/"
