@@ -28,23 +28,23 @@ Requisitos do projeto:
 
 :arrow_right: Insira 3 objetos nesse array, cada objeto deve conter essas informações dos pokemons:
 
-:asterisk: Número;
+        :asterisk: Número;
 
-:asterisk: Nome;
+        :asterisk: Nome;
 
-:asterisk: Tipo;
+        :asterisk: Tipo;
 
-:asterisk: Imagem;
+        :asterisk: Imagem;
 
-:asterisk: Descrição;
+        :asterisk: Descrição;
 
-:asterisk: Altura;
+        :asterisk: Altura;
 
-:asterisk: Peso;
+        :asterisk: Peso;
 
-:asterisk: Categoria;
+        :asterisk: Categoria;
 
-:asterisk: Habilidade;
+        :asterisk: Habilidade;
 
 :arrow_right: Ao renderizar a view index.ejs, envie esse array como variável;
 
