@@ -97,6 +97,29 @@ section#cadastro form label {
   font-weight: 500;
 }
 
+section#cadastro form button {
+  padding: 0.6rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: solid 2px #000000;
+  color: #000000;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+section#cadastro form button:hover {
+  color: rgb(161, 9, 34);
+  background-color: rgb(238, 196, 98);
+  border: solid 2px rgb(161, 9, 34);
+}
+
 .buttonDisable {
   padding: 0.6rem;
   display: flex;
@@ -113,16 +136,6 @@ section#cadastro form label {
 }
 
 .buttonDisable:hover {
-  padding: 0.6rem;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1rem;
-  background-color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-weight: 900;
   color: rgb(161, 9, 34);
   background-color: rgb(238, 196, 98);
   border: solid 2px rgb(161, 9, 34);
