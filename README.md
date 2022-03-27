@@ -1,6 +1,12 @@
 # Blue-Modulo2-Projeto2-Pokedex
 Projeto 2 do módulo 2 - Pokédex.
 
+:point_right: Foi feito o deploy do projeto. Segue abaixo o link do Heroku.
+
+https://blue-modulo2-projeto2-pokedex.herokuapp.com/
+
+
+
 Esse projeto consiste em criar uma Pokédex.
 A Pokédex trata-se de uma enciclopédia virtual portátil  que os treinadores Pokémon transportam para registrar todas as espécies diferentes de Pokémon que são encontradas durante a sua viagem como treinadores. 
 
